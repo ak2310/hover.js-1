@@ -15,10 +15,43 @@
         h1{
             font-family: monospace;
         }
+        .b{
+            width: 0%;
+            background-color: aqua;
+            height: 100%;
+            animation-name: loader;
+            animation-duration: 3s;
+            border-radius: inherit;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+        @keyframes loader{
+            from{
+                width: 0%;
+            }
+            to{
+                width: 100%;
+            }
+        }
+        h1::after{
+            content: "ABC";
+            color: red;
+            animation-name: hobby ;
+            animation-duration: 5s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+        @keyframes hobby {
+            0%{content: "ABC";}
+            25%{content: "EFG";}
+            50%{content: "LOP";}
+            75%{content:"XYZ";}
+            100%{content:"RET";}
+        }
     </style>
 </head>
 <body>
-    <div class="a"></div>
+    <div class="a"><div class="b"></div></div>
     <h1>Hi, my Hobbies are </h1>
 </body>
 </html>

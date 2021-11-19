@@ -16,6 +16,33 @@
             cursor: pointer;
             margin: 10px;
         }
+        button:hover{
+            background-color: #fff;
+            color: #000;
+            transform: scale(1.2);
+            border:2px solid red;
+            transition: .8s;
+        }
+        input:focus{
+            background-color: aqua;
+        }
+        p::after{
+            content: ' End of p tag';
+            color: red;
+        }
+        p::before{
+            content: 'Start of P tag ';
+        }
+        div p:nth-child(2){
+            color: aquamarine;
+        }
+        ::selection{
+            background-color: #000;
+            color: #fff;
+        }
+        ::marker{
+            color: rebeccapurple;
+        }
     </style>
 </head>
 

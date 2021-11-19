@@ -12,10 +12,12 @@
     </style>
 </head>
 <body>
-    <a href="https:google.com">Google</a>
+    <a href="https://google.com">Google</a>
     <button>Go forward</button>
     <script>
-        document.querySelector("button").addEventListener('click',() => history.forward());
+        document.querySelector("button").addEventListener('click',() => {
+            history.forward();
+        })
     </script>
 </body>
 </html>

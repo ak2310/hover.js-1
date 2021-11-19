@@ -5,8 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Events</title>
+    <style>
+        #hi{
+            width: 250px;
+            height: 250px;
+            background-color: #121212;
+        }
+    </style>
 </head>
 <body>
-    
+    <div id="hi"></div>
+    <p></p>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $("body").keypress(a =>{
+            document.querySelector("p").innerHTML=a.code;
+        });
+    </script>
 </body>
 </html>

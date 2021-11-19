@@ -15,7 +15,13 @@
 <body>
     <div></div>
     <script>
-
+        let a = document.querySelector("div");
+        let b = document.createElement("p");
+        b.innerHTML = "Hello World";
+        a.insertAdjacentElement("beforeend",b);
+        a.insertAdjacentHTML("beforebegin","<p>Hello World 0</p>")
+        a.insertAdjacentHTML("afterbegin","<p>Hello World 2</p>")
+        a.insertAdjacentHTML("afterend","<p>Hello World 2</p>")
     </script>
 </body>
 </html>

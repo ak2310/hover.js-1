@@ -19,6 +19,16 @@
 <body>
     <div id="displaydata"></div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    
+    <script>
+        let a = new XMLHttpRequest();
+        a.onload = () => {
+            let b = JSON.parse(a.responseText);
+            for(x in b){
+            $("#displaydata").append(`<p>Student Name : ${b[x].name} , marks : ${b[x].marks}</p>`);
+            }
+        };
+        a.open("GET","file1.json",true);
+        a.send();
+    </script>
 </body>
 </html>

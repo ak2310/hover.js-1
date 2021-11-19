@@ -18,7 +18,11 @@
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos illo consectetur rerum praesentium omnis ex est doloremque nesciunt! Iure, ad.</p>
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos illo consectetur rerum praesentium omnis ex est doloremque nesciunt! Iure, ad.</p>
     <script>
-        
+        document.querySelector(".a").setAttribute("id","b");
+        console.log(document.querySelector(".a").hasAttribute("id"));
+        document.querySelector(".a").removeAttribute("id");
+        console.log(document.querySelector(".a").hasAttribute("id"));
+        console.log(document.querySelector(".a").attributes);
     </script>
 </body>
 </html>

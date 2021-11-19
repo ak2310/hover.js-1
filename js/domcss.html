@@ -24,7 +24,10 @@
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae beatae voluptatibus aut a illo! Sunt exercitationem natus esse beatae asperiores?</p>
     <button>Change</button>
     <script>
-        
+        document.querySelector("button").addEventListener('click',() => {
+            document.querySelector("p").classList.toggle("abc");
+            // document.querySelector("p").style.backgroundColor="red";
+        });
     </script>
 </body>
 </html>
